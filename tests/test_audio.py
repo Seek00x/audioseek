@@ -91,6 +91,54 @@ class UploadTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             service.clear_upload({"session_id": "../../"})
 
+    def test_noncanonical_storage_path_preserves_session_cleanup_boundary(self):
+        anchor = self.root / "path alias anchor"
+        anchor.mkdir()
+        service = BaseService.__new__(BaseService)
+        service.root = self.root
+        service.data_root = anchor / ".." / "uploads"
+        service.data_root.mkdir()
+        first, second = service.new_session(), service.new_session()
+        for state in (first, second):
+            directory = service.session_directory(state)
+            directory.mkdir()
+            (directory / "keep.txt").write_text("fixture")
+        service.clear_upload(first)
+        self.assertFalse(service.session_directory(first).exists())
+        self.assertTrue((service.session_directory(second) / "keep.txt").is_file())
+
+    def test_session_storage_cannot_escape_application_root(self):
+        service = BaseService.__new__(BaseService)
+        service.root = self.root
+        service.data_root = (self.root.parent / "outside_upload_fixture").resolve()
+        with self.assertRaises(ValueError):
+            service.session_directory(service.new_session())
+
+    @unittest.skipUnless(sys.platform == "win32", "Windows short-name paths only")
+    def test_windows_short_storage_path_uses_same_cleanup_boundary(self):
+        import ctypes
+        from ctypes import wintypes
+        canonical = (self.root / "upload path with long name").resolve()
+        canonical.mkdir()
+        get_short_path = ctypes.WinDLL("kernel32", use_last_error=True).GetShortPathNameW
+        get_short_path.argtypes = [wintypes.LPCWSTR, wintypes.LPWSTR, wintypes.DWORD]
+        get_short_path.restype = wintypes.DWORD
+        buffer = ctypes.create_unicode_buffer(32768)
+        count = get_short_path(str(canonical), buffer, len(buffer))
+        if not count or count >= len(buffer) or buffer.value.casefold() == str(canonical).casefold():
+            self.skipTest("This filesystem does not expose a short-path alias")
+        service = BaseService.__new__(BaseService)
+        service.root = self.root
+        service.data_root = Path(buffer.value)
+        state = service.new_session()
+        directory = service.session_directory(state)
+        self.assertEqual(directory, canonical / state["session_id"])
+        directory.mkdir()
+        (directory / "fixture.txt").write_text("fixture")
+        service.clear_upload(state)
+        self.assertFalse(directory.exists())
+        self.assertTrue(canonical.is_dir())
+
 
 if __name__ == "__main__":
     unittest.main()
