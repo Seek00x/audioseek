@@ -1,0 +1,201 @@
+{
+  "application": "AudioSeek",
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 141,
+      "sha256": "a997f4bfd84f1cf714a4a00bca88de5517ece18fe0ceb7a84d71694600fb3570"
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "bytes": 1338,
+      "sha256": "c426c8d76bd8d067e3cb51d3983c8b1d9042fd02cd01cb33a3a6c294e5a2e8a6"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 463,
+      "sha256": "c0914de0aa60b05145374a17f5e9465fe6d20f7974e24999013ca1904b30d11d"
+    },
+    {
+      "path": "app.py",
+      "bytes": 138,
+      "sha256": "179d7535d6c29ab74ac74db170954b8e73414347fc93cbb11be5c6c3d9f49d45"
+    },
+    {
+      "path": "audioseek/__init__.py",
+      "bytes": 95,
+      "sha256": "a2ac218a55ce371475c0d98ac0c24afaf8fcbcfe1e0203ccbbcbec54da8c94f7"
+    },
+    {
+      "path": "audioseek/__main__.py",
+      "bytes": 138,
+      "sha256": "b98901ee875aebcf8ba47a4e2556ab22fad6039b16c816f723b277aa37c4ed52"
+    },
+    {
+      "path": "audioseek/audio.py",
+      "bytes": 5439,
+      "sha256": "d2c61127c69cc8ddfcaa034528ba28381cde7095b7cb39f42ff9caa398d5c9a0"
+    },
+    {
+      "path": "audioseek/base.py",
+      "bytes": 9026,
+      "sha256": "ddaa7ff684fc435397ae5ce5c31b9d93cd05be4ff5fafb504e9d708f6578a27b"
+    },
+    {
+      "path": "audioseek/config/asr_model_files.json",
+      "bytes": 840,
+      "sha256": "afd9ddd0755befa674f1c22c03056fdc2642fd8795f8828948aa665e5650d3cc"
+    },
+    {
+      "path": "audioseek/config/retrieval.json",
+      "bytes": 596,
+      "sha256": "5f1db7c2f3e4c2173c5b3ee6ef377e907712edfd02395ce771a9b9573c47c923"
+    },
+    {
+      "path": "audioseek/config/semantic.json",
+      "bytes": 710,
+      "sha256": "e02d854446de9c051cac6fa770f71bd58bc186c0ef7cd4c9d21f590861f7eb6c"
+    },
+    {
+      "path": "audioseek/config/semantic_model_files.json",
+      "bytes": 1873,
+      "sha256": "4ac562cbf876d03ec06ac3aeaaf0993809ba46a10d4b90a562b5f4de9ecd6bbd"
+    },
+    {
+      "path": "audioseek/config/upload.json",
+      "bytes": 839,
+      "sha256": "3c959fcca1efd17e7a4e5f55df9d7785cbdd7c24f6437991e00874aa0f3de212"
+    },
+    {
+      "path": "audioseek/controls.py",
+      "bytes": 6562,
+      "sha256": "a66c3f8ab66af7981946cbed8ce03e2d173209fdfd3fd6413f417f104f75db86"
+    },
+    {
+      "path": "audioseek/downloads.py",
+      "bytes": 4909,
+      "sha256": "189cc8590a0402c699430afbf403465668d20f4aa16c86258ef7e3118c6f31da"
+    },
+    {
+      "path": "audioseek/fetch_asr_model.py",
+      "bytes": 1980,
+      "sha256": "13c7d8e41a3cc4cf1e5554031da5ab3be51cad30b6ec86e923fdf74ff2742621"
+    },
+    {
+      "path": "audioseek/fetch_semantic_model.py",
+      "bytes": 3022,
+      "sha256": "1162aefe9b993184e726eb6d05d0489af3b9f06a2c9fc63c0ff7be3f691d7640"
+    },
+    {
+      "path": "audioseek/io.py",
+      "bytes": 538,
+      "sha256": "eb169b123463e42c312b3cbeca53ffc34ee64c3ee741298f0ea7377e1aae1684"
+    },
+    {
+      "path": "audioseek/retrieval.py",
+      "bytes": 8196,
+      "sha256": "56cb711cff989264214e6e4fa11686aa91d09f156f1f8e256f24befb3067cafe"
+    },
+    {
+      "path": "audioseek/semantic.py",
+      "bytes": 9347,
+      "sha256": "214d0d226737824393c14b133211e8b1afaf4a77067ef77e849c007847111b34"
+    },
+    {
+      "path": "audioseek/service.py",
+      "bytes": 10129,
+      "sha256": "30dda79f054f7ae910689ad59b27ec2d59dc550aba4d603f1c19fa1cc7c689d3"
+    },
+    {
+      "path": "audioseek/ui.py",
+      "bytes": 21219,
+      "sha256": "7f9b3cbad117da43c82e6c9fb1c60752d78ce74d23cfe91a5019ac35af70bd32"
+    },
+    {
+      "path": "docs/assets/overview.png",
+      "bytes": 114988,
+      "sha256": "5e53de864dc2d377742875d28fc45c77dcecd197b891deccdd43af39fe1f7da4"
+    },
+    {
+      "path": "docs/assets/walkthrough.gif",
+      "bytes": 6132436,
+      "sha256": "cbd9863ff0c47e383f6823470231e6fdff33d807596cbf185dccc44fe28c0310"
+    },
+    {
+      "path": "docs/assets/walkthrough.mp4",
+      "bytes": 660035,
+      "sha256": "86a55122cb4fd4a2a187d59498dc6aead028cf699894f95818d27bdec513d08b"
+    },
+    {
+      "path": "docs/QUICKSTART.zh-CN.md",
+      "bytes": 2803,
+      "sha256": "6d21b5dd43f00b9736c536fab437635a08e222374ec47d68976f3fa5ff535d9f"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 2256,
+      "sha256": "20549ee85efe9f4e581463224981ca43f1277c49df0fa709bea8476e74aeb743"
+    },
+    {
+      "path": "MANIFEST.in",
+      "bytes": 286,
+      "sha256": "36a2872d166dbb832882c7e0770ed101e7499fb3ec428d189f29ec9f11b1bee3"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 806,
+      "sha256": "c2018d92143e3688d3166abfff83052b725f84a1cbbd286d9c19ccfb4536d171"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9092,
+      "sha256": "fa7f3d3545a11e0daf9ac3801fd284bec396816ff5a97bc24f9e6153dfe6cf8c"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 94,
+      "sha256": "7ef9ee767693c1bd9c429cd476d29458bff9d0004aaa16f1dbfd8cffe28427d4"
+    },
+    {
+      "path": "tests/test_audio.py",
+      "bytes": 4942,
+      "sha256": "a76adeec5bf038d9a21572e48d72e7bd742ad1b1fa68996d99a0731a2661de08"
+    },
+    {
+      "path": "tests/test_controls.py",
+      "bytes": 5436,
+      "sha256": "d48aaa3b726f543892a7a5b811b97f2b3739a6d64900653e121ec6470495e91e"
+    },
+    {
+      "path": "tests/test_downloads.py",
+      "bytes": 4104,
+      "sha256": "2c499474b233843d376aed7dc6f410c3019673a5d4cb9238e94443329568bac6"
+    },
+    {
+      "path": "tests/test_processing.py",
+      "bytes": 5416,
+      "sha256": "add838ec81304c35bb32ec904e3cb09cce9561caa9494c68416fe2d332adc00d"
+    },
+    {
+      "path": "tests/test_retrieval.py",
+      "bytes": 2003,
+      "sha256": "488f19dc6037825c837b855419d36d25f844039b9e47f942038b0ff1f684d977"
+    },
+    {
+      "path": "tests/test_semantic.py",
+      "bytes": 5292,
+      "sha256": "06c6e64774be720c67fa0bacea4ccd0355d4b3b95b9497a28d88db4df99ff864"
+    },
+    {
+      "path": "tests/test_startup.py",
+      "bytes": 1680,
+      "sha256": "30e562c72b90a336009aa046761d8e605d7aece0ea07095bb68d9595fab7bec2"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 1793,
+      "sha256": "680480179b44d7509abcfe3a7d834470df789cb391186012268935ba0602f5ad"
+    }
+  ]
+}

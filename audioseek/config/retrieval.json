@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "tokenizer_checkpoint": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+  "tokenizer_revision": "b207367332321f8e44f96e224ef15bc607f4dbf0",
+  "max_tokens_including_special": 256,
+  "target_words": 120,
+  "overlap_fraction": 0.25,
+  "turn_boundary_min_fraction": 0.5,
+  "bm25": {
+    "k1": 1.5,
+    "b": 0.75,
+    "epsilon": 0.25
+  },
+  "dedup_overlap_threshold": 0.8,
+  "ranking_depth": 10,
+  "ranking_tie_break": [
+    "word_start",
+    "word_end",
+    "chunk_id"
+  ],
+  "normalize_apostrophes": true,
+  "lowercase": true,
+  "remove_stopwords": false,
+  "stemming": false
+}

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=78,<81", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audioseek-local"
+version = "0.1.0"
+description = "Search English recordings and replay the matching passages locally."
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "gradio==6.9.0",
+  "numpy==2.2.6",
+  "rank-bm25==0.2.2",
+  "tokenizers==0.22.1",
+  "sentence-transformers==5.1.2",
+  "transformers==4.57.6",
+  "huggingface-hub==0.36.2",
+  "torch==2.9.1",
+  "scipy==1.16.3",
+  "scikit-learn==1.7.2",
+  "faster-whisper==1.2.1",
+  "ctranslate2==4.8.2",
+  "av==16.0.1",
+  "onnxruntime==1.23.2",
+]
+
+[project.scripts]
+audioseek = "audioseek.ui:main"
+
+[tool.setuptools.packages.find]
+include = ["audioseek*"]
+
+[tool.setuptools.package-data]
+audioseek = ["config/*.json"]

@@ -1,0 +1,30 @@
+{
+  "version": "recording-1",
+  "language": "en",
+  "allowed_extensions": [
+    ".wav",
+    ".mp3",
+    ".m4a",
+    ".flac",
+    ".ogg"
+  ],
+  "max_file_bytes": 536870912,
+  "max_duration_seconds": 7200,
+  "sample_rate": 16000,
+  "asr_checkpoint": "Systran/faster-whisper-base.en",
+  "asr_revision": "3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+  "asr_model_directory": "data/models/faster-whisper-base.en",
+  "asr_device": "cpu",
+  "asr_compute_type": "int8",
+  "asr_cpu_threads": 4,
+  "asr_beam_size": 3,
+  "asr_word_timestamps": true,
+  "asr_vad_filter": true,
+  "asr_condition_on_previous_text": false,
+  "asr_block_seconds": 900,
+  "asr_segmentation_version": "nonoverlapping-15min-v1",
+  "playback_buffer_seconds": 1.0,
+  "merge_audio_gap_seconds": 2.0,
+  "max_playback_clip_seconds": 90,
+  "user_data_directory": "data/recordings"
+}

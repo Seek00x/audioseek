@@ -1,0 +1,66 @@
+{
+  "checkpoint": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+  "revision": "b207367332321f8e44f96e224ef15bc607f4dbf0",
+  "files": [
+    {
+      "filename": "1_Pooling/config.json",
+      "bytes": 190,
+      "git_blob_sha1": "d1514c3162bbe87b343f565fadc62e6c06f04f03",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "config.json",
+      "bytes": 612,
+      "git_blob_sha1": "72b987fd805cfa2b58c4c8c952b274a11bfd5a00",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "config_sentence_transformers.json",
+      "bytes": 116,
+      "git_blob_sha1": "fd1b291129c607e5d49799f87cb219b27f98acdf",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "model.safetensors",
+      "bytes": 90868376,
+      "git_blob_sha1": "e0d95fbc5a8b0c0d14a5217f72d6caaf459e859c",
+      "lfs_sha256": "7bec4fd9eba43073d5c5dcf1b79b0a3397608fa063e6f626d6f8fd70a81f2d8c"
+    },
+    {
+      "filename": "modules.json",
+      "bytes": 349,
+      "git_blob_sha1": "952a9b81c0bfd99800fabf352f69c7ccd46c5e43",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "sentence_bert_config.json",
+      "bytes": 53,
+      "git_blob_sha1": "f789d99277496b282d19020415c5ba9ca79ac875",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "special_tokens_map.json",
+      "bytes": 112,
+      "git_blob_sha1": "e7b0375001f109a6b8873d756ad4f7bbb15fbaa5",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "tokenizer.json",
+      "bytes": 466247,
+      "git_blob_sha1": "9c190aac0fb9edc2293b69b82c6d5d5d21e67dd9",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "tokenizer_config.json",
+      "bytes": 383,
+      "git_blob_sha1": "d50701956f8e35e7507e6b74547a71e62ca39cad",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "vocab.txt",
+      "bytes": 231508,
+      "git_blob_sha1": "fb140275c155a9c7c5a3b3e0e77a9e839594a938",
+      "lfs_sha256": null
+    }
+  ]
+}

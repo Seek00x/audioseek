@@ -1,0 +1,6 @@
+include README.md THIRD_PARTY.md requirements.txt app.py .gitignore .gitattributes
+recursive-include audioseek/config *.json
+recursive-include docs *.md *.png *.gif *.mp4
+recursive-include tests *.py
+recursive-include .github/workflows *.yml
+global-exclude __pycache__ *.py[cod] *.part

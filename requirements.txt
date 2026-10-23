@@ -1,0 +1,2 @@
+# Install CPU PyTorch first; see README.md. Application versions live in pyproject.toml.
+-e .

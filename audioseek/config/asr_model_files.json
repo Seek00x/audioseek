@@ -1,0 +1,30 @@
+{
+  "checkpoint": "Systran/faster-whisper-base.en",
+  "revision": "3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+  "files": [
+    {
+      "filename": "config.json",
+      "bytes": 2227,
+      "git_blob_sha1": "594369787efe617005d199b03739ee0ead7e3ab7",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "model.bin",
+      "bytes": 145216508,
+      "git_blob_sha1": "9da2bff17ae4c4cd79c81e40466e817d5f56e57a",
+      "lfs_sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+    },
+    {
+      "filename": "tokenizer.json",
+      "bytes": 2128466,
+      "git_blob_sha1": "15d7bdf9ba25718ca2504eec6a8f02bc55af0a6a",
+      "lfs_sha256": null
+    },
+    {
+      "filename": "vocabulary.txt",
+      "bytes": 422309,
+      "git_blob_sha1": "ee695b8d3e3c10d488304e04468efec4ca27554a",
+      "lfs_sha256": null
+    }
+  ]
+}

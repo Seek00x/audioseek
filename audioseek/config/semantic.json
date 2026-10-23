@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "checkpoint": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+  "revision": "b207367332321f8e44f96e224ef15bc607f4dbf0",
+  "model_directory": "data/models/multi-qa-MiniLM-L6-cos-v1",
+  "max_seq_length": 256,
+  "embedding_dimension": 384,
+  "batch_size": 32,
+  "normalize_embeddings": true,
+  "dtype": "float32",
+  "device": "cpu",
+  "torch_threads": 4,
+  "attention_implementation": "eager",
+  "query_encoding_api": "encode_query",
+  "document_encoding_api": "encode_document",
+  "query_prompt": null,
+  "document_prompt": null,
+  "similarity": "normalized_dot_product",
+  "rrf_K": 60,
+  "rrf_weights": [
+    1.0,
+    1.0
+  ],
+  "rrf_inputs": "complete_raw_rankings_before_deduplication"
+}
