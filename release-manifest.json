@@ -39,8 +39,8 @@
     },
     {
       "path": "audioseek/base.py",
-      "bytes": 9026,
-      "sha256": "ddaa7ff684fc435397ae5ce5c31b9d93cd05be4ff5fafb504e9d708f6578a27b"
+      "bytes": 9316,
+      "sha256": "40eab7de03ad324f34d631e90cb91cd74a72abd9547e02b4ff9842e168cd413b"
     },
     {
       "path": "audioseek/config/asr_model_files.json",
@@ -159,8 +159,8 @@
     },
     {
       "path": "tests/test_audio.py",
-      "bytes": 4942,
-      "sha256": "a76adeec5bf038d9a21572e48d72e7bd742ad1b1fa68996d99a0731a2661de08"
+      "bytes": 7440,
+      "sha256": "a1e0a5909fde4776febfc7164f57104daf081b54aae1c7d4b38ad2a22d9ee33e"
     },
     {
       "path": "tests/test_controls.py",
