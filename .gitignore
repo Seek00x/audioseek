@@ -1,0 +1,47 @@
+# Python and build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Local settings, credentials and runtime material
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.cache/
+data/
+models/
+uploads/
+output/
+tmp/
+temp/
+*.log
+*.part
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.mp4
+*.npy
+*.safetensors
+*.bin
+*.zip
+*.docx
+*.pdf
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+
+# Public, reviewed demo assets
+!docs/assets/*.mp4
