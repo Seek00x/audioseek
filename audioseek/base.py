@@ -56,8 +56,11 @@ class BaseService:
         identifier = state["session_id"]
         if not re.fullmatch(r"[a-f0-9]{32}", identifier):
             raise ValueError("Invalid session identity")
-        directory = (self.data_root / identifier).resolve()
-        directory.relative_to(self.data_root)
+        # Normalize both sides: Windows can expand an 8.3 alias in the child path.
+        boundary = Path(self.data_root).resolve()
+        boundary.relative_to(Path(self.root).resolve())
+        directory = (boundary / identifier).resolve()
+        directory.relative_to(boundary)
         return directory
 
     def upload_identity(self, source):
@@ -154,6 +157,8 @@ class BaseService:
         clips = (self.root / "output/demo-clips" / state["session_id"]).resolve()
         clips.relative_to((self.root / "output/demo-clips").resolve())
         for target, boundary in [(directory, self.data_root), (clips, (self.root / "output/demo-clips").resolve())]:
+            boundary = Path(boundary).resolve()
+            boundary.relative_to(Path(self.root).resolve())
             resolved = target.resolve()
             resolved.relative_to(boundary)
             if resolved == boundary or target.is_symlink():
